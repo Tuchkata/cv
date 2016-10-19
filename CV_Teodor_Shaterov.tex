@@ -1,0 +1,171 @@
+%% start of file `Lebenslauf_Template.tex'.
+%% Original-Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Changed by gratiswurst.de
+%
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[english, ngerman]{babel}
+\usepackage[ansinew]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{graphicx}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+%----------------------------------------------------------------------------------
+%            Kontaktdaten
+%----------------------------------------------------------------------------------
+% VORNAME
+\firstname{Teodor}
+% NACHNAME
+\familyname{Shaterov}
+%TITEL (optional, ggf. einfach die Zeile loeschen!)
+\title{CV, Teodor Shaterov}    
+%ADRESSE  (optional, ggf. einfach die Zeile loeschen!)
+%\address{Musterstr. 54}{12345 Musterhausen}
+%HANDYNUMMER  (optional, ggf. einfach die Zeile loeschen!)
+\mobile{+359 883 321 171} 
+%FESTNETZNUMMER  (optional, ggf. einfach die Zeile loeschen!)
+%\phone{0123 / 12345678}
+%EMAIL-ADRESSE  (optional, ggf. einfach die Zeile loeschen!)
+\email{teodor.shaterov@gmail.com} 
+%HOMEPAGE  (optional, ggf. einfach die Zeile loeschen!)
+%\homepage{www.gratiswurst.de}
+%FOTO  (optional, ggf. einfach die Zeile loeschen!)
+%  64pt = Hoehe des Bildes, 'picture' = Name des Bildes
+\photo[100pt]{profile_photo}
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+%----------------------------------------------------------------------------------
+%            Inhalt
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{Personal Information}
+\cvline{City of residence}{Sofia}
+\cvline{Birthday}{27.12.1989}
+\cvline{Place of birth}{Sofia, Bulgaria}
+
+\section{Work Experience}
+\subsection{10.2014 - Present SEEBURGER AG}
+\cvline{Position held}{Java developer}
+\cvline{Description}{Development and maintenance of SFTP client and server, implementation of a corresponding REST API. Integration of additional internal software solutions such as the Seeburger File Exchange sharing service. Development of an information layer for the detailed feedback of event occurrences in the adapter etc.}
+\subsection{10.2013 - 10.2014 SEEBURGER AG}
+\cvline{Position held}{Junior Java developer}
+\cvline{Description}{Part of the data transmission team in the field of research and development of Profile Manager Adapter for performance feedback of the whole system including the load of the CPU, the write/read speed of memory, network and database, RMI calls etc.}
+\subsection{12.2012 - 10.2013 KOSTAL SofiaSoft Bulgaria OOD}
+\cvline{Position held}{Automotive test engineer}
+\cvline{Description}{Writing and developing automated tests for different products in the automotive industry}
+\subsection{05.2012 - 12.2012 Fraunhofer-Gesellschaft, Integrated Circuits}
+\cvline{Position held}{Programming embedded systems and sensor nets in C/C++ and Java}
+\cvline{Description}{Involvement in the development of a network from embedded devices, communicating through a centralized Java server and the of the Java server itself. \newline}
+
+
+\section{Education}
+\subsection{Master of science "`Computer science"' (Distance education)}
+\cvline{2013 - 2016}{University of Hagen, Germany}
+\cvline{}{\emph{Current grade: 1,7 (according to the german grading)}}
+\cvline{Area of specialisation}{Software engineering and programming languages}
+\cvline{}{Master thesis}
+\cvline{Title}{\emph{Development of a framework for semi-automatic mapping to eCl@ss (in progress)}}
+\cvline{Tutor}{Dr. Wolfgang Wilkes}
+
+\subsection{Bachelor of science "`Computer science"'}
+\cvline{2009 - 2012}{University of Erlangen-N\"urnberg, Germany}
+\cvline{}{\emph{Final grade: 2,6 (according to the german grading)}}
+\cvline{Area of specialisation}{Programming systems and software engineering}
+\cvline{27.11.2012}{Bachelor thesis}
+\cvline{Title}{\emph{Intelligent Documentation Generation for NGapl}}
+\cvline{Tutor}{Dr. Ronald Veldema}
+\cvline{Summary}{Patch the NGapl compiler so that documentation can be propagated automatically. The compiler and all features are written in Java}
+
+\subsection{High school}
+\cvline{2003 - 2008}{National High School of Mathematics and Science "`Akademik Lyubomir Chakalov"', Sofia}
+\cvline{Area of specialisation}{English, Maths, Computer science}
+\cvline{}{\emph{Final grade: 5,83 (A-)}}
+
+\section{Other experience}
+\subsection{Internship}
+%----------------------------------------------------------------------------------
+%            ACHTUNG: Bei aenderungen das "}" am Ende nicht vergessen!!!
+%----------------------------------------------------------------------------------
+\cvline{10.2011 - 3.2012}{Developing Embedded Systems \newline at LS12 University of Erlangen-N\"urnberg \newline
+												 Responsibilities:
+												 % Aufzaehlung
+												 \begin{itemize}
+													\item Using SystemC to program different filters for recognizing different skin colors 													
+													\item Developing the game "'Space Invaders"' for a FPGA with a camera and an electric motor
+  											 \end{itemize}
+}%-- Gehoert zu \cvline
+\cvline{10.2011 - 3.2012}{Developing a compiler \newline at LS2 University of Erlangen-N\"urnberg  \newline
+												 Responsibilities:
+												 % Aufzaehlung
+												 \begin{itemize}
+													\item Developing the language grammar similar to the C programming language										
+													\item Developing the scanner, parser and the code generators in Java and Assembly 
+  											 \end{itemize}
+}%-- Gehoert zu \cvline
+
+\subsection{Seminar}
+\cvline{4.2011 - 8.2011}{Design patterns and anti-patterns \newline Theme : Visitor, Iterator and Strategy}
+\cvline{4.2016 - 7.2016}{Operating systems \newline Theme : Operating systems for small computers like Raspberry Pi}
+
+\section{Technical skills and competences}
+\cvline{Systems}{Linux, UNIX, Windows, Mac OS X}
+\cvline{Programming languages}{Fluent: Java \newline Intermediate: Bash, C, JavaScript \newline Basic: PHP, Python}
+\cvline{Application servers}{JBoss}
+\cvline{IDEs}{Eclipse, IntelliJ IDEA, NetBeans}
+\cvline{Continuous integration tools}{Hudson/Jenkins}
+\cvline{Data storage}{MS SQL, Oracle, PostgreSQL, MySQL}
+\cvline{Data exchange technologies}{RESTful(JAX-RS), JAX-WS, Apache CXF} 
+\cvline{Database access}{JDBC}
+\cvline{Database access tools}{PhpMyAdmin, MySQL Administrator, Postgre pgAdmin, Oracle SQL developer, MSSQL Management Studio}
+\cvline{Version control}{Git, Gerrit, SVN, CVS, Mercurial}
+\cvline{Other}{AWT/Swing, SSH, SFTP, encryption, SSL, digital signatures, FTP, JUnit, Mockito, TestNG, Docker, JAXB, Maven, UML, \LaTeX, XML, CSS, (X)HTML, Arduino, Raspberry Pi etc.}
+
+
+
+%\renewcommand{\listitemsymbol}{-} % Das Aufzaehlungszeichen fuer die folgende Liste
+%\cvlistdoubleitem{Das kann ich}{Das hier auch}
+%\cvlistdoubleitem{Und sowas ist ganz toll}{Blablabla}
+%\cvlistdoubleitem{Und noch was}{}
+
+\section{Languages}
+\cvline{Bulgarian}{Native}
+\cvline{German}{Fluent}
+\cvline{English}{Fluent}
+
+\section{Certificates}
+\cvline{2008}{Certificate of Advanced English}
+\cvline{2009}{TestDaF (Test of German as a foreign language)}
+
+\section{Social network profiles}
+\cvline{}{GitHub : \url{https://github.com/Tuchkata}}
+\cvline{}{LinkedIn : \url{https://www.linkedin.com/in/teodorshaterov}}
+\cvline{}{Twitter : \url{https://twitter.com/Fire_TuX}}
+
+
+
+%Musterstadt, \today\\ % Aktuelles Datum und Stadt
+%\includegraphics[scale=0.7]{us.jpg}\\ % Unterschrift. Loeschen falls nicht vorhanden
+\end{document}
+
+
+%% end of file `Lebenslauf_Template.tex'.
