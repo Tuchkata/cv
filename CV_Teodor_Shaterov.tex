@@ -20,7 +20,7 @@
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
 \usepackage{graphicx}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\setlength{\hintscolumnwidth}{cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
@@ -59,12 +59,20 @@
 \begin{document}
 \maketitle
 \section{Personal Information}
-\cvline{City of residence}{Sofia}
+\cvline{City of residence}{Sofia, Bulgaria}
 \cvline{Birthday}{27.12.1989}
 \cvline{Place of birth}{Sofia, Bulgaria}
 
 \section{Work Experience}
-\subsection{10.2014 - Present SEEBURGER AG}
+\subsection{01.2017 - present ESTAFET}
+\cvline{Position held}{Consultant developer}
+\cvline{Description}{\begin{itemize}
+													\item Elsevier CEF Entellect Project - processing of structured and unstructured content.\newline \textbf{Technologies :} Java 8, Microservices, Spring Boot, Apache Camel, AWS (EC2, SQS, S3), Docker, Terraform, Jenkins, Maven, Git \newline \textbf{Role :} Senior developer, responsible for design and implementation\newline
+													\item Estafet Bench Project - development of various internal projects.\newline \textbf{Technologies :} Java 8, Spring Boot, Apache Camel, Amache ActiveMQ, Jenkins, Maven, Git\newline \textbf{Role :} Senior developer, mentoring people learning Spring Boot and Apache Camel, defining training paths, design and implementation of several internal projects\newline
+													\item Elsevier OPSBank Project - migration of a legacy document portal.\newline \textbf{Technologies :} Java 8, Primefaces, JavaScript, JBoss EAP, Jenkins, Maven, Git\newline \textbf{Role :} Senior developer, responsibilities covering mostly refactoring and rewriting\newline
+													\item AWS IoT Portal - management of IoT devices in millions of households.\newline \textbf{Technologies :} Java, AWS (EC2, S3, Lambda, DynamoDB, IoT), OpenShift, Primefaces, OAuth 2.0, Spring Boot, Jenkins, Maven, Git\newline \textbf{Role :} Senior developer, responsibilities covering the whole stack - design and implementation, introducing new technologies and workflows  
+  											 \end{itemize}}
+\subsection{10.2014 - 12.2016 SEEBURGER AG}
 \cvline{Position held}{Java developer}
 \cvline{Description}{Development and maintenance of SFTP client and server, implementation of a corresponding REST API. Integration of additional internal software solutions such as the Seeburger File Exchange sharing service. Development of an information layer for the detailed feedback of event occurrences in the adapter etc.}
 \subsection{10.2013 - 10.2014 SEEBURGER AG}
@@ -81,10 +89,10 @@
 \section{Education}
 \subsection{Master of science "`Computer science"' (Distance education)}
 \cvline{2013 - 2016}{University of Hagen, Germany}
-\cvline{}{\emph{Current grade: 1,7 (according to the german grading)}}
+\cvline{}{\emph{Final grade: 1,7 (according to the german grading)}}
 \cvline{Area of specialisation}{Software engineering and programming languages}
 \cvline{}{Master thesis}
-\cvline{Title}{\emph{Development of a framework for semi-automatic mapping to eCl@ss (in progress)}}
+\cvline{Title}{\emph{Development of a framework for semi-automatic mapping to eCl@ss}}
 \cvline{Tutor}{Dr. Wolfgang Wilkes}
 
 \subsection{Bachelor of science "`Computer science"'}
@@ -94,51 +102,32 @@
 \cvline{27.11.2012}{Bachelor thesis}
 \cvline{Title}{\emph{Intelligent Documentation Generation for NGapl}}
 \cvline{Tutor}{Dr. Ronald Veldema}
-\cvline{Summary}{Patch the NGapl compiler so that documentation can be propagated automatically. The compiler and all features are written in Java}
 
 \subsection{High school}
 \cvline{2003 - 2008}{National High School of Mathematics and Science "`Akademik Lyubomir Chakalov"', Sofia}
-\cvline{Area of specialisation}{English, Maths, Computer science}
-\cvline{}{\emph{Final grade: 5,83 (A-)}}
 
-\section{Other experience}
-\subsection{Internship}
-%----------------------------------------------------------------------------------
-%            ACHTUNG: Bei aenderungen das "}" am Ende nicht vergessen!!!
-%----------------------------------------------------------------------------------
-\cvline{10.2011 - 3.2012}{Developing Embedded Systems \newline at LS12 University of Erlangen-N\"urnberg \newline
-												 Responsibilities:
-												 % Aufzaehlung
-												 \begin{itemize}
-													\item Using SystemC to program different filters for recognizing different skin colors 													
-													\item Developing the game "'Space Invaders"' for a FPGA with a camera and an electric motor
-  											 \end{itemize}
-}%-- Gehoert zu \cvline
-\cvline{10.2011 - 3.2012}{Developing a compiler \newline at LS2 University of Erlangen-N\"urnberg  \newline
-												 Responsibilities:
-												 % Aufzaehlung
-												 \begin{itemize}
-													\item Developing the language grammar similar to the C programming language										
-													\item Developing the scanner, parser and the code generators in Java and Assembly 
-  											 \end{itemize}
-}%-- Gehoert zu \cvline
-
-\subsection{Seminar}
-\cvline{4.2011 - 8.2011}{Design patterns and anti-patterns \newline Theme : Visitor, Iterator and Strategy}
-\cvline{4.2016 - 7.2016}{Operating systems \newline Theme : Operating systems for small computers like Raspberry Pi}
+%\section{Other experience}
+%\subsection{Seminar}
+%\cvline{4.2011 - 8.2011}{Design patterns and anti-patterns \newline Theme : Visitor, Iterator and Strategy}
+%\cvline{4.2016 - 7.2016}{Operating systems \newline Theme : Operating systems for small computers like Raspberry Pi}
 
 \section{Technical skills and competences}
 \cvline{Systems}{Linux, UNIX, Windows, Mac OS X}
-\cvline{Programming languages}{Fluent: Java \newline Intermediate: Bash, C, JavaScript \newline Basic: PHP, Python}
-\cvline{Application servers}{JBoss}
-\cvline{IDEs}{Eclipse, IntelliJ IDEA, NetBeans}
-\cvline{Continuous integration tools}{Hudson/Jenkins}
+\cvline{Programming languages}{Fluent: Java \newline Intermediate: C, Go \newline Basic: JavaScript, Python, Bash}
+\cvline{Application servers}{JBoss, Apache Tomcat, GlassFish}
+\cvline{IDEs}{Eclipse, IntelliJ IDEA, Visual Studio Code}
+\cvline{Cloud technologies} {AWS (EC2, SQS, S3, DynamoDB, Lambda, IoT), OpenShift, Docker, Terraform}
+\cvline{CI tools}{Hudson/Jenkins}
+\cvline{Build automation} {Maven, Ant}
 \cvline{Data storage}{MS SQL, Oracle, PostgreSQL, MySQL}
-\cvline{Data exchange technologies}{RESTful(JAX-RS), JAX-WS, Apache CXF} 
-\cvline{Database access}{JDBC}
-\cvline{Database access tools}{PhpMyAdmin, MySQL Administrator, Postgre pgAdmin, Oracle SQL developer, MSSQL Management Studio}
-\cvline{Version control}{Git, Gerrit, SVN, CVS, Mercurial}
-\cvline{Other}{AWT/Swing, SSH, SFTP, encryption, SSL, digital signatures, FTP, JUnit, Mockito, TestNG, Docker, JAXB, Maven, UML, \LaTeX, XML, CSS, (X)HTML, Arduino, Raspberry Pi etc.}
+\cvline{Exchange technologies}{RESTful(JAX-RS, Spring MVC, Spring Boot), JAX-WS, Apache CXF, Apache Camel, Apache ActiveMQ} 
+\cvline{DB access}{JDBC, Hibernate, Spring-data, GraphQL}
+\cvline{Web development} {Servlets, PrimeFaces, JSF, Spring Boot}
+\cvline{VCS}{Git, Gerrit, SVN, CVS, Mercurial}
+\cvline{Techniques} {Microservices, Object-oriented analysis \& design}
+\cvline{Methodologies} {Agile, Scrum, Kanban}
+\cvline{Testing frameworks} {JUnit, Mockito, TestNG}
+\cvline{Other}{UML, OAuth, SSH, SFTP, encryption, SSL, digital signatures, FTP, JAXB, \LaTeX, XML, CSS, (X)HTML etc.}
 
 
 
